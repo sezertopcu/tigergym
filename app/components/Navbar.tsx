@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -58,11 +59,18 @@ export default function Navbar() {
         >
           <a href="#home" onClick={closeMenu} className="flex items-center gap-3">
             <div
-              className={`flex items-center justify-center rounded-full bg-orange-600 shadow-lg shadow-orange-600/20 transition-all duration-300 ${
-                scrolled ? "h-10 w-10 text-xl" : "h-12 w-12 text-2xl"
+              className={`overflow-hidden rounded-full shadow-lg shadow-orange-600/20 transition-all duration-300 ${
+                scrolled ? "h-10 w-10" : "h-12 w-12"
               }`}
             >
-              🐯
+              <Image
+                src="/tiger-logo.png"
+                alt="Tiger Gym"
+                width={80}
+                height={80}
+                priority
+                className="h-full w-full object-cover"
+              />
             </div>
 
             <div className="leading-none">
@@ -166,8 +174,14 @@ export default function Navbar() {
               className="fixed right-4 top-24 z-50 w-[calc(100%-32px)] max-w-sm rounded-[28px] border border-black/10 bg-white p-5 shadow-2xl lg:hidden"
             >
               <div className="mb-5 flex items-center gap-3 border-b border-black/10 pb-5">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-orange-600 text-2xl">
-                  🐯
+                <div className="h-12 w-12 overflow-hidden rounded-full">
+                  <Image
+                    src="/tiger-logo.png"
+                    alt="Tiger Gym"
+                    width={80}
+                    height={80}
+                    className="h-full w-full object-cover"
+                  />
                 </div>
 
                 <div>
