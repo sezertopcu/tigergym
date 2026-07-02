@@ -370,8 +370,8 @@ export default function EquipmentPage() {
   }, [activeCategory, activeEquipments]);
 
   return (
-    <main className="min-h-screen overflow-hidden bg-[#f7f4ef] pt-28 text-black">
-      <section className="relative px-5 pb-16 pt-10">
+    <main className="min-h-screen overflow-hidden bg-[#f7f4ef] text-black">
+      <section className="relative px-5 pt-5 pb-16 md:pt-8">
         <div className="absolute left-0 top-24 h-72 w-72 rounded-full bg-orange-500/10 blur-3xl" />
         <div className="absolute right-0 top-64 h-80 w-80 rounded-full bg-orange-500/10 blur-3xl" />
 
@@ -554,13 +554,14 @@ export default function EquipmentPage() {
                 </p>
               </div>
 
-              <div className="relative min-h-[520px] bg-white">
+              <div className="relative flex items-center justify-center bg-white p-4 lg:min-h-[520px]">
                 <Image
                   src={selected.image}
                   alt={selected.title}
-                  fill
+                  width={900}
+                  height={1200}
                   sizes="100vw"
-                  className="object-contain p-4"
+                  className="h-auto max-h-[55vh] w-auto max-w-full object-contain lg:max-h-[85vh]"
                   priority
                 />
               </div>
