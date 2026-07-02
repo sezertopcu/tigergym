@@ -43,7 +43,7 @@ export default function Footer() {
                   Akıllı Sistemler
                 </a>
 
-                <a href="#equipment" className="block text-zinc-400 transition hover:text-orange-500">
+                <a href="/equipment" className="block text-zinc-400 transition hover:text-orange-500">
                   Ekipmanlar
                 </a>
 
