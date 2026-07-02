@@ -2,7 +2,6 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import SmartSystems from "./components/SmartSystems";
-import EquipmentSlider from "./components/EquipmentSlider";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -17,7 +16,6 @@ export default function Home() {
 
       <SmartSystems />
 
-      <EquipmentSlider />
 
       <Contact />
 

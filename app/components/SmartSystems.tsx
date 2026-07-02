@@ -61,7 +61,7 @@ export default function SmartSystems() {
         <MotionSection delay={0.08}>
           <div className="overflow-hidden rounded-[38px] border border-black/10 bg-[#f8f8f5] p-3 shadow-[0_35px_90px_rgba(0,0,0,.12)]">
             <Image
-              src="/akilli-sistemler.png"
+              src="/smart-systems.png"
               alt="Tiger Gym Akıllı Sistemler"
               width={1600}
               height={1000}

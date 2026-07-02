@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const menuItems = [
   { label: "Hakkımızda", href: "#about", id: "about" },
   { label: "Akıllı Sistemler", href: "#systems", id: "systems" },
-  { label: "Ekipmanlar", href: "#equipment", id: "equipment" },
+  { label: "Ekipmanlar", href: "/equipment", id: "equipment" },
   { label: "İletişim", href: "#contact", id: "contact" },
 ];
 
